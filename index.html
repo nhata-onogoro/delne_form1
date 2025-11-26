@@ -29,6 +29,16 @@
           -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
         }
+        .page-number {
+          position: fixed;
+          top: 10mm;
+          right: 15mm;
+          font-size: 12px;
+          color: #000;
+        }
+        .page-number::after {
+          content: "ページ " counter(page) " / " counter(pages);
+        }
       }
     </style>
   <script type="importmap">
