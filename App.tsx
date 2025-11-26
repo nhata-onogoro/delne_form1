@@ -55,6 +55,9 @@ const App: React.FC = () => {
         <SurveySheet data={surveyData} />
       </div>
 
+      {/* Page Numbering for Print */}
+      <div className="page-number hidden print:block text-gray-900" aria-hidden="true" />
+
     </div>
   );
 };
